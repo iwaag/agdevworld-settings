@@ -1,0 +1,28 @@
+# agdevworld settings manifest (ag.settings-manifest.v1).
+#
+# What the Front Desk and the agents read to know who the characters are and
+# what a room looks like. Paths are relative to this repository's root.
+# Adding a character is a new `[characters.<id>]` table plus its files;
+# nothing in agdevworld or agfront has to change.
+
+schema = "ag.settings-manifest.v1"
+
+[characters.front]
+name = "Front"
+nickname = "姐さん"
+lore = "characters/front/lore.md"
+face = "characters/front/face.jpg"
+# Which agents speak as this character: the `agent` name every instance
+# declares in its `#agents` introduction (`front-agstudio1` is agent `front`).
+agents = ["front"]
+
+[characters.autolab]
+name = "Autolab"
+nickname = "親方"
+lore = "characters/autolab/lore.md"
+face = "characters/autolab/face.jpg"
+agents = ["autolab"]
+
+[rooms.front]
+name = "Front Desk"
+background = "rooms/front/bg.png"
