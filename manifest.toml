@@ -26,3 +26,11 @@ agents = ["autolab"]
 [rooms.front]
 name = "Front Desk"
 background = "rooms/front/bg.png"
+
+[characters.forge]
+name = "Forge"
+nickname = "ピーちゃん"
+lore = "characters/forge/lore.md"
+face = "characters/forge/face.jpg"
+# `agforge-agstudio1` introduces itself in `#agents` as agent `agforge`.
+agents = ["agforge"]
