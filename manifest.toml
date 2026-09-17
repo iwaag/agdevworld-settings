@@ -27,6 +27,11 @@ agents = ["autolab"]
 name = "Front Desk"
 background = "rooms/front/bg.png"
 
+# The Arguing Room (argue p2): where a human leads an argue with every agent.
+[rooms.argue]
+name = "Arguing Room"
+background = "rooms/argue/bg.png"
+
 [characters.forge]
 name = "Forge"
 nickname = "ピーちゃん"
@@ -34,3 +39,14 @@ lore = "characters/forge/lore.md"
 face = "characters/forge/face.jpg"
 # `agforge-agstudio1` introduces itself in `#agents` as agent `agforge`.
 agents = ["agforge"]
+
+# The knowledge council. `archsage-agstudio1` introduces itself as agent
+# `archsage`; this is the council's own voice. A sage (`sage:<name>`) is a
+# different speaker on the same account and is *not* this character: it is
+# shown under its own label unless a character lists it in `senders`.
+[characters.archsage]
+name = "Archsage"
+nickname = "ターくん"
+lore = "characters/archsage/lore.md"
+face = "characters/archsage/face.png"
+agents = ["archsage"]
