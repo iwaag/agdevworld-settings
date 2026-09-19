@@ -32,6 +32,12 @@ background = "rooms/front/bg.png"
 name = "Arguing Room"
 background = "rooms/argue/bg.png"
 
+# The Project Room (project_room p1): where a human follows a project or a
+# study from its purpose through its plans and runs and talks in them.
+[rooms.project]
+name = "Project Room"
+background = "rooms/project/bg.png"
+
 [characters.forge]
 name = "Forge"
 nickname = "ピーちゃん"
